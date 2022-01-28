@@ -16,7 +16,7 @@
                     </li>
                 </ul>
                 <a href="#">
-                    <img src="img/logo.svg" alt="Логотип "Седона">
+                    <img src="img/logo.svg" alt="Логотип "Седона" width="138px" height="71">
                 </a>
                 <ul>
                     <li>
@@ -32,9 +32,9 @@
             <img src="img/polygon.png" width="1200px" height="57px">
         </header>
         <main>
-            <h1>Город Седона</h1>
+            <h1 class="visually-hidden">Город Седона</h1>
             <section>
-                <h2>Преимущества города Седона</h2>
+                <h2 class="visually-hidden">Преимущества города Седона</h2>
                 <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                 <ul>
@@ -86,10 +86,20 @@
                 </ul>
             </section>
             <section>
-                <h2>Поиск отеля в городе Седона</h2>
+                <h2 class="visually-hidden">Поиск отеля в городе Седона</h2>
                 <h3>Заинтересовались?</h3>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <button type="button">Поиск гостиницы в Седоне</button>
+                <form class="visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">
+                    <label>Дата заезда: <input type="date" name="datein"></label>
+                    <br>
+                    <label>Дата выезда: <input type="date" name="datout"></label>
+                    <br>
+                    <label>Взрослые: <input type="number" name="adults" value="2" min="1" step="1"></label>
+                    <label>Дети: <input type="number" name="children" value="0" min="0" step="1"></label>
+                    <br>
+                    <input type="submit" value="Найти">
+                </form>
                 <img src="img/map.jpg" width="1200px" height="597px" alt="Как добраться - карта">
             </section>
         </main>
