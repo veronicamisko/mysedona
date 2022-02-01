@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Седона</title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="css/normalixe.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul class="site-navigation">
                     <li>
                         <a href="info.html">Информация</a>
                     </li>
@@ -15,7 +18,7 @@
                         <a href="gallery.html">Фото и видео</a>
                     </li>
                 </ul>
-                <a href="#">
+                <a class="main-header-logo" href="#">
                     <img src="img/logo.svg" alt="Логотип "Седона" width="138" height="71">
                 </a>
                 <ul>
@@ -31,108 +34,107 @@
             <img src="img/welcome.png" width="457px" height="350px" alt="Добро пожаловать в величественную Седону.">
             <img src="img/polygon.png" width="1200" height="57">
         </header>
-        <main>
+        <main class="container">
             <h1 class="visually-hidden">Город Седона</h1>
-            <section>
+            <section class="features">
                 <h2 class="visually-hidden">Преимущества города Седона</h2>
                 <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-                <ul>
-                    <li>
+                <ul class="futures-list">
+                    <li class="future-item">
                         <h3>Настоящий городок</h3>
                         <p>— №1 —</p>
                         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         <img src="img/true-city.jpg" width="800" height="401" alt="Городская таверна">
 
-                        <ul>
-                            <li>
+                        <ul class="city-places">
+                            <li class="city-places-item">
                                 <h3>Жилье</h3>
                                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                                 <img src="img/home.svg" width="75" height="72">
                             </li>
-                            <li>
+                            <li class="city-places-item">
                                 <h3>Еда</h3>
                                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                                 <img src="img/food.svg" width="75" height="70">
                             </li>
-                            <li>
+                            <li class="city-places-item">
                                 <h3>Сувениры</h3>
                                 <p>Не только китайского, но и местного производства!</p>
                                 <img src="img/gift.svg" width="64" height="77">
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="future-item">
                         <h3>Там есть мост дьявола</h3>
                         <p>— №2 —</p>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         <img src="img/devil-bridge.jpg" width="800" height="400">
                     </li>
-                    <li>
+                    <li class="future-item">
                         <h3>Небольшая площадь</h3>
                         <p>— №3 —</p>
                         <p>Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li>
+                    <li class="future-item">
                         <h3>Красивая дорога</h3>
                         <p>— №4 —</p>
                         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li>
+                    <li class="future-item">
                         <h3>Мало туристов</h3>
                         <p>— №5 —</p>
                         <p>Большинство едет в гранд каньон и толпится там</p>
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class="search">
                 <h2 class="visually-hidden">Поиск отеля в городе Седона</h2>
                 <h3>Заинтересовались?</h3>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button type="button">Поиск гостиницы в Седоне</button>
-                <form class="visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">
-                    <label>Дата заезда: <input type="date" name="datein"></label>
-                    <br>
-                    <label>Дата выезда: <input type="date" name="dateout"></label>
-                    <br>
-                    <label>Взрослые: <input type="number" name="adults" value="2" min="1" step="1"></label>
-                    <label>Дети: <input type="number" name="children" value="0" min="0" step="1"></label>
-                    <br>
-                    <input type="submit" value="Найти">
+                <button class="button" type="button">Поиск гостиницы в Седоне</button>
+                <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">
+                    <p class="search-item">
+                        <label for="date-in">Дата заезда:</label>
+                        <input id="date-in" type="date" name="datein" value="2017-04-24">
+                    </p>
+                    <p class="search-item">
+                        <label for="date-out">Дата выезда:</label>
+                        <input id="date-out" type="date" name="dateout" value="2017-07-04">
+                    </p>
+                    <p class="search-item">
+                        <label for="adult">Взрослые:</label>
+                        <input id="adult" type="number" name="adults" value="2" min="1" step="1">
+                        <label for="child">Дети:</label>
+                        <input id="child" type="number" name="children" value="0" min="0" step="1">
+                    </p>
+                    <button class="button" type="submit">Найти</button>
                 </form>
                 <img src="img/map.jpg" width="1200" height="597" alt="Как добраться - карта">
             </section>
         </main>
-        <footer>
-            <ul>
-                <li>
-                    <p>#VISITSEDONA</p>
-                    <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-                </li>
-                <li>
-                    <ul>
-                        <li>
-                            <a>
-                                <img src="img/twitter.svg">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="img/fb-icon.svg">
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="img/youtube.svg">
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <p>Website by</p>
-                    <img src="img/logo-htmlacademy.svg">
-                </li>
-            </ul>
+        <footer class="main-footer">
+            <p class="footer-contacts">
+                #VISITSEDONA<br>
+                <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+            </p>
+            <div class="footer-socials">
+                <ul>
+                    <li>
+                        <a class="social-button" href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                Website by
+                <a class="button" href="https://htmlacademy.ru"></a>
+            </p>
         </footer>
     </body>
 </html>
