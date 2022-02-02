@@ -15,3 +15,129 @@ body {
 a {
     text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.main-header {
+    background-image: url("/img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    display: block;
+    position: relative;
+}
+
+.site-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.site-navigation,
+.futures-list {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #99cccc;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.features div{
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.features p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.features-list {
+    list-style: none;
+
+    text-align: center;
+}
+
+.features-list h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.features-list p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.feature-item-one,
+.feature-item-two {
+    color: #ffffff;
+    background-color: #81B3D2;
+}
+
+
+.feature-item-one p,
+.feature-item-two p {
+    color: #ffffff;
+}
+
+
+.city-places {
+    list-style: none;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.city-places p {
+    color: #333333;
+}
+
+.search {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.search h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.search p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
