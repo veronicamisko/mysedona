@@ -9,23 +9,21 @@
     </head>
     <body>
         <header class="main-header">
+            <a class="main-header__logo" href="#">
+                <img src="img/logo.svg" alt="Логотип "Седона" width="138" height="71">
+            </a>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li>
+                    <li class="site-navigation__item site-navigation__item-one">
                         <a href="info.html">Информация</a>
                     </li>
-                    <li>
+                    <li class="site-navigation__item site-navigation__item-two">
                         <a href="gallery.html">Фото и видео</a>
                     </li>
-                    <li>
-                        <a class="main-header-logo" href="#">
-                           <img src="img/logo.svg" alt="Логотип "Седона" width="138" height="71">
-                        </a>
-                    </li>
-                    <li>
+                    <li class="site-navigation__item site-navigation__item-three">
                         <a href="map.html">Карта штата</a>
                     </li>
-                    <li>
+                    <li class="site-navigation__item site-navigation__item-four">
                         <a href="hotels.html">Гостиницы</a>
                     </li>
                 </ul>
@@ -36,53 +34,53 @@
         <main class="container">
             <h1 class="visually-hidden">Город Седона</h1>
             <section class="features">
-                <div>
+                <div class="features-introduction">
                     <h2 class="visually-hidden">Преимущества города Седона</h2>
                     <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
                     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                 </div>
                 <ul class="features-list">
-                    <li class="feature-item feature-item-one">
+                    <li class="features-list__item features-list__item-one">
                         <h3>Настоящий городок</h3>
                         <p>— №1 —</p>
                         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         <img src="img/true-city.jpg" width="800" height="401" alt="Городская таверна">
 
                         <ul class="city-places">
-                            <li class="city-places-item">
+                            <li class="city-places__item city-places__item-one">
                                 <h3>Жилье</h3>
                                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                                 <img src="img/home.svg" width="75" height="72">
                             </li>
-                            <li class="city-places-item">
+                            <li class="city-places__item city-places__item-two">
                                 <h3>Еда</h3>
                                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                                 <img src="img/food.svg" width="75" height="70">
                             </li>
-                            <li class="city-places-item">
+                            <li class="city-places__item city-places__item-three">
                                 <h3>Сувениры</h3>
                                 <p>Не только китайского, но и местного производства!</p>
                                 <img src="img/gift.svg" width="64" height="77">
                             </li>
                         </ul>
                     </li>
-                    <li class="feature-item feature-item-two">
+                    <li class="features-list__item features-list__item-two">
                         <h3>Там есть мост дьявола</h3>
                         <p>— №2 —</p>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         <img src="img/devil-bridge.jpg" width="800" height="400">
                     </li>
-                    <li class="feature-item feature-item-three">
+                    <li class="features-list__item features-list__item-three">
                         <h3>Небольшая площадь</h3>
                         <p>— №3 —</p>
                         <p>Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li class="feature-item feature-item-four">
+                    <li class="features-list__item features-list__item-four">
                         <h3>Красивая дорога</h3>
                         <p>— №4 —</p>
                         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li class="feature-item feature-item-five">
+                    <li class="features-list__item features-list__item-five">
                         <h3>Мало туристов</h3>
                         <p>— №5 —</p>
                         <p>Большинство едет в гранд каньон и толпится там</p>
@@ -93,23 +91,23 @@
                 <h2 class="visually-hidden">Поиск отеля в городе Седона</h2>
                 <h3>Заинтересовались?</h3>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="button" type="button">Поиск гостиницы в Седоне</button>
+                <button class="search-button button" type="button">Поиск гостиницы в Седоне</button>
                 <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru/courses" method="post">
-                    <p class="search-item">
+                    <p class="search-form__item">
                         <label for="date-in">Дата заезда:</label>
-                        <input id="date-in" type="date" name="datein" value="2017-04-24">
+                        <input class="search-form__input" id="date-in" type="date" name="datein" value="2017-04-24">
                     </p>
-                    <p class="search-item">
+                    <p class="search-form__item">
                         <label for="date-out">Дата выезда:</label>
-                        <input id="date-out" type="date" name="dateout" value="2017-07-04">
+                        <input class="search-form__input" id="date-out" type="date" name="dateout" value="2017-07-04">
                     </p>
-                    <p class="search-item">
+                    <p class="search-form__item">
                         <label for="adult">Взрослые:</label>
-                        <input id="adult" type="number" name="adults" value="2" min="1" step="1">
+                        <input class="search-form__input" id="adult" type="number" name="adults" value="2" min="1" step="1">
                         <label for="child">Дети:</label>
-                        <input id="child" type="number" name="children" value="0" min="0" step="1">
+                        <input class="search-form__input" id="child" type="number" name="children" value="0" min="0" step="1">
                     </p>
-                    <button class="button" type="submit">Найти</button>
+                    <button class="search-form__button button" type="submit">Найти</button>
                 </form>
                 <img src="img/map.jpg" width="1200" height="597" alt="Как добраться - карта">
             </section>

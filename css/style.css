@@ -101,15 +101,15 @@ a {
     line-height: 21px;
 }
 
-.feature-item-one,
-.feature-item-two {
+.features-list__item-one,
+.features-list__item-two {
     color: #ffffff;
     background-color: #81B3D2;
 }
 
 
-.feature-item-one p,
-.feature-item-two p {
+.features-list__item-one p,
+.features-list__item-two p {
     color: #ffffff;
 }
 
